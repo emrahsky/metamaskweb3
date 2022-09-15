@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>test</title>
+</head>
+<body>
+
+<h1>TEST METAMASK</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <span><strong>Connected Account:</strong></span><br>
+      <span id="selected-account"><br>none</span><br>
+      <strong><span id="account-balance"></span></strong>
+      <br>
+      <span class="badge bg-warning text-dark" id="network-name"><strong>not connected</strong></span>
+      <br>
+      <br>
+    </div>
+    <div class="col-sm">
+      <button id="btn-connect" type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Connect Wallet</button>
+      <button id="btn-disconnect" style="display:none" type="button" class="btn btn-outline-secondary btn-lg px-4">Disconnect</button>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-sm-3">
+      <input class="form-control" type="text" id="amount" placeholder="Amount">
+    </div>
+    <div class="col-sm">
+      <button id="btn-send" type="button" class="btn btn-primary px-4 me-sm-3">Send</button>
+    </div>
+  </div>
+</div>
+<script src="chains.js"></script>
+<script src="wallet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
